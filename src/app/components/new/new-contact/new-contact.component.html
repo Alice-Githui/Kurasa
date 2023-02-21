@@ -1,0 +1,66 @@
+<app-header></app-header>
+<div class="row add-contact">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <!-- createform -->
+        <form action="" #newform="ngForm">
+            <h3 class="heading2">Create New Contact</h3>
+            <div class="row mt-3">
+                <div class="col-md-2">
+                    <p>First Name:</p>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" name="first_name" [(ngModel)]="newContact.first_name" class="form-control">
+                    
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-2">
+                    <p>Last Name:</p>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" name="last_name" [(ngModel)]="newContact.last_name" class="form-control">                                
+                </div>
+                
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-2">
+                    <label>Phone Number:</label>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" name="phone_number" [(ngModel)]="newContact.phone_number" max="12" class="form-control">                                
+                </div>
+                                        
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-2">
+                    <label>Email:</label>
+                </div>
+                <div class="col-md-8">
+                    <input type="email" name="email" [(ngModel)]="newContact.email" class="form-control"> 
+                </div> 
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-2">
+                    <label>Location:</label>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" name="location" [(ngModel)]="newContact.location" class="form-control">  
+                  
+                </div> 
+            </div>
+            <div class="buttons">
+                <div *ngIf="loading">
+                    <button class="btn btn-info">Please Wait...</button> 
+                </div>
+                <div *ngIf="!loading">
+                    <button (click)="createContact()" class="btn btn-info" routerLink="">Save</button>  
+                </div>                         
+            </div>
+        </form> 
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+
+

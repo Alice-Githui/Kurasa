@@ -1,0 +1,13 @@
+.top-buttons{
+    display: flex;
+    justify-content: flex-end;   
+}
+
+.top-buttons button{
+    margin-left: 2em; 
+}
+
+.edit-contact{
+    justify-content: center;
+    height: 100vh;
+}

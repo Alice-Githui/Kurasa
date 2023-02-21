@@ -1,0 +1,20 @@
+<!-- display contacts -->
+<div *ngIf="contact">
+    <div class="mt-2">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Name: {{ contact.first_name }} {{ contact.last_name }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Phone: {{ contact.phone_number }}</h6>
+                <p class="card-text">Email: {{ contact.email }}</p>
+                <p class="card-text">Location: {{ contact.location }}</p>
+                <a href="#" class="card-link" (click)="onEditContact()"><button class="btn btn-primary">Edit</button></a>
+                <a href="#" class="card-link" (click)="deleteContact(contact.id)"><button class="btn btn-danger">Delete</button></a>
+            </div>
+        </div>
+        
+    </div>
+    
+   
+</div>
+
+
