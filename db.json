@@ -1,0 +1,44 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "phone_number": "0722333444",
+      "email": "sebastian@codingthesmartway.com",
+      "location": "Nairobi"
+    },
+    {
+      "id": 2,
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "phone_number": "0722333444",
+      "email": "steve@codingthesmartway.com",
+      "location": "Nairobi"
+    },
+    {
+      "id": 3,
+      "first_name": "Ann",
+      "last_name": "Smith",
+      "phone_number": "072233344",
+      "email": "ann@codingthesmartway.com",
+      "location": "Nairobi"
+    },
+    {
+      "first_name": "Test",
+      "last_name": "User",
+      "email": "testuser@mail.com",
+      "phone_number": "0745234567",
+      "location": "Nairobi",
+      "id": 4
+    },
+    {
+      "first_name": "Test",
+      "last_name": "User 2",
+      "email": "user2@mail.com",
+      "phone_number": "0765432123",
+      "location": "Kericho",
+      "id": 5
+    }
+  ]
+}
