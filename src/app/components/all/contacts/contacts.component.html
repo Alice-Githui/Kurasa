@@ -4,32 +4,22 @@
     <div class="col-md-1"></div>
     <div class="col-md-10">
         <div class="row ">
-            <div class="row mt-5 mb-3">
-                <div class="col-md-6"></div>
-                <div class="col-md-2">
-                    <div class="">
-                       
-                                               
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <form>
-                        <div class="form-group">
-                            <label for ="user-name">Search Contact:</label>
-                            <input type = "text" id="name" class="form-control"  placeholder = "Enter Name" name="name"> 
-                        </div>
-                        <!-- <button type="submit" class="btn btn-info" (click)= "submitName()">Submit</button> -->
-                
-                    </form>
-                </div>
-            </div>
+            <div class="top-buttons mb-2 mt-3">
+                <!-- Search Field -->
+               <div>
+                   <div class="filter-wrap">
+                   <input [(ngModel)]="searchText" placeholder="Search by First Name" class="filter-input">
+                   <!-- <span class="filter-clear" *ngIf="searchText.length>0" (click)="clearFilter()">X</span> -->
+                   </div>
+               </div>
+           </div>
             <div class="top-buttons">
                 <div>
                     <a [routerLink]="['/create_new_contact']"><button class="btn btn-info">Add New</button></a> 
                  </div>
             </div>
             
-            <app-single-contact *ngFor="let contact of contacts" [contact]="contact" class="col-md-3" (selectedContact)="onContactSelected($event)"></app-single-contact> 
+            <app-single-contact *ngFor="let contact of contacts | filter : searchText | sort: 'first_name' "  [contact]="contact" class="col-md-3" (selectedContact)="onContactSelected($event)"></app-single-contact> 
             
             <app-contact *ngIf="editContactDetails" [contact]="editContactDetails" class="edit-contact"></app-contact>
 

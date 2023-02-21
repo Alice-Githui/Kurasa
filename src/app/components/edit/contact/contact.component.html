@@ -48,13 +48,16 @@
                   
                 </div> 
             </div>
-            <div class="buttons">
-                <div *ngIf="loading">
-                    <button>Please Wait...</button> 
+            <div class="row mt-3">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 buttons">
+                    <div *ngIf="loading">
+                        <button>Please Wait...</button> 
+                    </div>
+                    <div *ngIf="!loading">
+                        <button (click)="editContact(newContact.id)" class="btn btn-info">Save</button>  
+                    </div> 
                 </div>
-                <div *ngIf="!loading">
-                    <button (click)="editContact(newContact.id)" class="btn btn-info">Save</button>  
-                </div>                         
             </div>
         </form> 
     </div>

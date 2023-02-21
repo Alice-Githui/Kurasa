@@ -28,7 +28,7 @@
                     <label>Phone Number:</label>
                 </div>
                 <div class="col-md-8">
-                    <input type="text" name="phone_number" [(ngModel)]="newContact.phone_number" class="form-control">                                
+                    <input type="text" name="phone_number" [(ngModel)]="newContact.phone_number" max="12" class="form-control">                                
                 </div>
                                         
             </div>
@@ -37,7 +37,7 @@
                     <label>Email:</label>
                 </div>
                 <div class="col-md-8">
-                    <input type="text" name="email" [(ngModel)]="newContact.email" class="form-control"> 
+                    <input type="email" name="email" [(ngModel)]="newContact.email" class="form-control"> 
                 </div> 
             </div>
             <div class="row mt-3">
@@ -54,7 +54,7 @@
                     <button class="btn btn-info">Please Wait...</button> 
                 </div>
                 <div *ngIf="!loading">
-                    <button (click)="createContact()" class="btn btn-info">Save</button>  
+                    <button (click)="createContact()" class="btn btn-info" routerLink="">Save</button>  
                 </div>                         
             </div>
         </form> 

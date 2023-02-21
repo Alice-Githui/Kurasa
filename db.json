@@ -20,8 +20,8 @@
       "first_name": "Test",
       "last_name": "User",
       "email": "test@test.com",
-      "phone_number": "0786543212",
       "location": "Nairobi",
+      "phone_number": "0786543212",
       "id": 5
     },
     {
@@ -31,6 +31,22 @@
       "phone_number": "0734567899",
       "location": "Nairobi",
       "id": 6
+    },
+    {
+      "first_name": "Welsh",
+      "last_name": "Cou",
+      "email": "welsh@mail.com",
+      "phone_number": "0765432123",
+      "location": "Welsh",
+      "id": 7
+    },
+    {
+      "first_name": "Quebec",
+      "last_name": "Country",
+      "email": "quebec@mail.com",
+      "phone_number": "0765432123",
+      "location": "Quebec",
+      "id": 8
     }
   ]
 }

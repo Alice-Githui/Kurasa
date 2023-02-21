@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-// import { ToastrModule, ToastrService } from 'ngx-toastr';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +11,8 @@ import { NewContactComponent } from './components/new/new-contact/new-contact.co
 import { ContactComponent } from './components/edit/contact/contact.component';
 import { HeaderComponent } from './components/header/header/header.component';
 import { SingleContactComponent } from './components/single/single-contact/single-contact.component';
+import { FilterPipe } from './pipes/pipes/filter.pipe';
+import { SortPipe } from './pipes/sort.pipe';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { SingleContactComponent } from './components/single/single-contact/singl
     ContactComponent,
     HeaderComponent,
     SingleContactComponent,
+    FilterPipe,
+    SortPipe,
   ],
   imports: [
     BrowserModule,

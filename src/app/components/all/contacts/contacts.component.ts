@@ -15,6 +15,8 @@ export class ContactsComponent implements OnInit {
   contacts!: Contacts[]
   editContactDetails!: Contacts
 
+  searchText: string = '';
+
 
   constructor(private contactService:ContactsService) { }
 
@@ -29,7 +31,8 @@ export class ContactsComponent implements OnInit {
     .subscribe({
       next:(res)=>{
         this.contacts= res
-        console.log(res)
+        // this.contacts= res
+        console.log(res.sort())
       }, 
       error: (error)=>{
         console.log(error.error)
