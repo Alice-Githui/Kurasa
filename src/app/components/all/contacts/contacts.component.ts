@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { Contacts } from 'src/app/models/contacts.model';
 import { ContactsService } from 'src/app/services/contacts/contacts.service';
 
+
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
@@ -12,6 +13,7 @@ export class ContactsComponent implements OnInit {
 
   // array that is an instance of contacts
   contacts!: Contacts[]
+  editContactDetails!: Contacts
 
 
   constructor(private contactService:ContactsService) { }
@@ -34,6 +36,10 @@ export class ContactsComponent implements OnInit {
       }
     })
   }
- 
+
+  onContactSelected(contact:Contacts){
+    this.editContactDetails = contact
+  }
+
 
 }

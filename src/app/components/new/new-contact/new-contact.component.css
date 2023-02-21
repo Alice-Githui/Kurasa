@@ -1,0 +1,16 @@
+.add-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.buttons button{
+    margin-left: 2em;
+}

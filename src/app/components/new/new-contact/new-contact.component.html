@@ -1,6 +1,7 @@
-<div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-10">
+<app-header></app-header>
+<div class="row add-contact">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
         <!-- createform -->
         <form action="" #newform="ngForm">
             <h3 class="heading2">Create New Contact</h3>
@@ -50,15 +51,16 @@
             </div>
             <div class="buttons">
                 <div *ngIf="loading">
-                    <button>Please Wait...</button> 
+                    <button class="btn btn-info">Please Wait...</button> 
                 </div>
                 <div *ngIf="!loading">
-                    <button (click)="createContact()">Save</button>  
+                    <button (click)="createContact()" class="btn btn-info">Save</button>  
                 </div>                         
             </div>
         </form> 
     </div>
-    <div class="col-md-1"></div>
+    <div class="col-md-2"></div>
 </div>
+
 
 

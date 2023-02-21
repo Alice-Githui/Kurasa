@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { Contacts } from 'src/app/models/contacts.model';
 import { ContactsService } from 'src/app/services/contacts/contacts.service';
 
+
 @Component({
   selector: 'app-new-contact',
   templateUrl: './new-contact.component.html',
@@ -46,6 +47,7 @@ export class NewContactComponent implements OnInit {
       next:(res)=>{
         console.log(res)
         this.loading=false
+        // this.toastr.success("Contact Set Successfully")
         this.newform.reset()
       }, 
       error: (error)=>{

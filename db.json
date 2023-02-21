@@ -1,15 +1,15 @@
 {
   "contacts": [
     {
-      "id": 1,
-      "first_name": "Sebastian",
-      "last_name": "Eschweiler",
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "email": "steve@codingthesmartway.com",
+      "location": "Kisumu",
       "phone_number": "0722333444",
-      "email": "sebastian@codingthesmartway.com",
-      "location": "Nairobi"
+      "id": 2
     },
     {
-      "id": 2,
+      "id": 4,
       "first_name": "Steve",
       "last_name": "Palmer",
       "phone_number": "0722333444",
@@ -17,28 +17,20 @@
       "location": "Nairobi"
     },
     {
-      "id": 3,
-      "first_name": "Ann",
-      "last_name": "Smith",
-      "phone_number": "072233344",
-      "email": "ann@codingthesmartway.com",
-      "location": "Nairobi"
-    },
-    {
       "first_name": "Test",
       "last_name": "User",
-      "email": "testuser@mail.com",
-      "phone_number": "0745234567",
+      "email": "test@test.com",
+      "phone_number": "0786543212",
       "location": "Nairobi",
-      "id": 4
+      "id": 5
     },
     {
-      "first_name": "Test",
-      "last_name": "User 2",
-      "email": "user2@mail.com",
-      "phone_number": "0765432123",
-      "location": "Kericho",
-      "id": 5
+      "first_name": "Coffee",
+      "last_name": "Kik",
+      "email": "coffee@crime.com",
+      "phone_number": "0734567899",
+      "location": "Nairobi",
+      "id": 6
     }
   ]
 }

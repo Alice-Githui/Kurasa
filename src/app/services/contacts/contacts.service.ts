@@ -8,6 +8,7 @@ const getContacts = environment.apiUrl + '/contacts'
 const getOneContact = environment.apiUrl + '/contacts'
 const createContact = environment.apiUrl + '/contacts'
 const deleteContact = environment.apiUrl + '/contacts'
+const editContact = environment.apiUrl + '/contacts'
 
 @Injectable({
   providedIn: 'root'
@@ -26,6 +27,10 @@ export class ContactsService {
 
   createContact(data:any) :Observable<any>{
     return this.http.post(createContact, data)
+  }
+
+  editContact(id:any,data:any) :Observable<any>{
+    return this.http.put(`${editContact}/${id}`, data)
   }
 
   deleteContact(id:any) :Observable<any>{
